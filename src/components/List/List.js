@@ -14,19 +14,34 @@ class List extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
     image: PropTypes.string,
-    description: settings.defaultListDescription,
+    description: PropTypes.node,
     columns: PropTypes.array,
   }
   static defaultProps = {
-    columns: [{title: 'Cat'}, {title: 'Dog'}, {title: 'Parrot'}],
+    description: settings.defaultListDescription,
   }
+  addColumn(title){
+  this.setState(state => (
+    {
+      columns: [
+        ...state.columns,
+        {
+          key: state.columns.length ? state.columns[state.columns.length-1].key+1 : 0,
+          title,
+          icon: 'list-alt',
+          cards: []
+        }
+      ]
+    }
+  ));
+}
   render() {
     return (
 
       <section className={styles.component}>
         <Hero titleText={this.props.title} imageSrc={this.props.image} />
         <div className={styles.description}>
-            <h3>{this.props.description}</h3>
+           {ReactHtmlParser(this.props.description)}
         </div>
         <div className={styles.columns}>
         {this.state.columns.map(({key, ...columnProps}) => (
