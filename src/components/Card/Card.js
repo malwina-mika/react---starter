@@ -13,7 +13,7 @@ class Card extends React.Component {
     return (
 
       <div className={styles.component}>
-        <h5 className={this.props.title}></h5>
+        <h5 className={listData.columns.cards}></h5>
       </div>
 
     )
