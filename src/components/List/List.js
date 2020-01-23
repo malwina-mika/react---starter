@@ -36,6 +36,18 @@ class List extends React.Component {
   ));
 }
   render() {
+    const x = {
+      x: 5,
+      y: 3,
+      key: 1,
+      name: 5
+    }
+
+    const {key, ...cokolwiek} = x;
+
+    console.log(key)
+    console.log(cokolwiek)
+
     return (
 
       <section className={styles.component}>

@@ -11,8 +11,9 @@ class Column extends React.Component {
     cards: this.props.cards || [],
   }
   static propTypes = {
-    title: PropTypes.string,
-     cards: PropTypes.array,
+    title: PropTypes.node.isRequired,
+    cards: PropTypes.array,
+    icon: PropTypes.node.isRequired,
   }
   addCard(title){
    this.setState(state => (
@@ -33,14 +34,13 @@ class Column extends React.Component {
 
       <section className={styles.component}>
         <h3 className={styles.title}> {this.props.title} <span className={styles.icon}> <Icon name={this.props.icon} /> </span></h3>
-        <div className={styles.creator}>
-        <div>
+
           {this.state.cards.map(({key, ...cardProps}) => (
             <Card key={key} {...cardProps} />
             ))}
-        </div>
-          <Creator text={settings.cardCreatorText} action={title => this.addColumn(title)}/>
-        </div>
+
+          <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
+
       </section>
 
     )
