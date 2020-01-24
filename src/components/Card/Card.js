@@ -7,7 +7,6 @@ class Card extends React.Component {
     title: PropTypes.string,
   }
 
-
   render() {
     return (
 
