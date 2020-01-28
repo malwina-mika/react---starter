@@ -7,6 +7,5 @@ const mapStateToProps = (state, props) => ({
 });
 
 
-
 export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId == listId);
 export default connect(mapStateToProps)(List);
