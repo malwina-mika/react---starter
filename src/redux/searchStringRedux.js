@@ -1,4 +1,6 @@
+
 // selectors
+export const getSearchString = searchString => searchString;
 
 // action name creator
 
@@ -13,4 +15,3 @@ export default function reducer(statePart = '', action = {}) {
       return statePart;
   }
 }
-
