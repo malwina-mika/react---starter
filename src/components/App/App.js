@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './App.scss';
 import Home from '../Home/HomeContainer';
 import Info from '../Info/Info';
 import FAQ from '../FAQ/FAQ';
@@ -14,7 +15,7 @@ const App = () => (
           atEnter={{ opacity: 0 }}
           atLeave={{ opacity: 0 }}
           atActive={{ opacity: 1 }}
-          className="switch-wrapper"
+          className={styles.switchWrapper}
         >
           <Route exact path='/' component={Home} />
           <Route exact path='/info' component={Info} />
