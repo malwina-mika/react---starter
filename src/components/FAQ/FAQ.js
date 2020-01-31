@@ -1,11 +1,19 @@
 import React from 'react';
 import Container from '../Container/Container';
-
-
+import Hero from '../Hero/Hero.js';
+import {faqContent} from '../../data/dataStore';
 
 const FAQ = () => (
   <Container>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <Hero titleText={faqContent.title} imageSrc={faqContent.image} />
+    <h2>{faqContent.number1}</h2>
+    <p>{faqContent.Answer1}</p>
+    <h2>{faqContent.number2}</h2>
+    <p>{faqContent.Answer2}</p>
+    <h2>{faqContent.number3}</h2>
+    <p>{faqContent.Answer3}</p>
+    <h2>{faqContent.number4}</h2>
+    <p>{faqContent.Answer4}</p>
   </Container>
 );
 

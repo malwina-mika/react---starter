@@ -3,7 +3,6 @@ import styles from './Header.scss';
 import {NavLink, Link} from 'react-router-dom';
 import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
-
 import {settings} from '../../data/dataStore';
 
 class Header extends React.Component {
