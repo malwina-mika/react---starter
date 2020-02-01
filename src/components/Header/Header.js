@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './Header.scss';
 import {NavLink, Link} from 'react-router-dom';
-import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
 import {settings} from '../../data/dataStore';
+import Search from '../Search/Search';
+import Container from '../Container/Container';
 
 class Header extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class Header extends React.Component {
             <Link to='/' className={styles.logo}>
               <Icon name={icon}/>
             </Link>
+            <Search/>
           </div>
           <nav>
             <NavLink exact to='/' activeClassName='active'>Home</NavLink>
