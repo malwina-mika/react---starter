@@ -8,9 +8,10 @@
 .component {
   background: $color-light;
   display: flex;
-  margin-bottom: $base-size;
+  margin-bottom: ($base-size * 2);
   border-radius: $radius;
   box-shadow: 0 ($base-size / 4) 0 rgba(0,0,0,0.3);
+  height: 150px;
 }
 
 .text {
@@ -24,7 +25,7 @@
 }
 
 .image {
-  height: 100px;
+  height: 150px;
   position: relative;
 
   img {

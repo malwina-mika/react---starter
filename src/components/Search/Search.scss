@@ -3,7 +3,7 @@
 .component {
   width: 100%;
   display: flex;
-
+  text-align: right;
   input {
     // flex-grow: 1;
     background: $color-light;
@@ -12,6 +12,7 @@
     margin: 0 0 $base-size 0;
     font-family: $font-text;
     border-radius: $radius;
+    text-transform: capitalize;
   }
 
   .buttons {

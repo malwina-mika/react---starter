@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './Search.scss';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
-import { settings } from '../../data/dataStore';
-import Icon from '../Icon/Icon';
+import {settings} from '../../data/dataStore';
+import Icon from '../Icon/Icon.js';
 import Container from '../Container/Container.js';
 import {withRouter} from 'react-router';
 

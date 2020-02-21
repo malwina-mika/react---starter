@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './SearchResults.scss';
 import PropTypes from 'prop-types';
-import Card from '../Card/Card.js';
-
+import Card from '../Card/Card';
+import Container from '../Container/Container';
 
 class SearchResults extends React.Component {
 
@@ -11,23 +11,21 @@ class SearchResults extends React.Component {
   }
 
   render() {
-    const {cards} = this.props;
+    const { cards } = this.props;
 
     return (
-
       <section className={styles.component}>
+        <Container>
 
-        <h3 className={styles.title}>SEARCHING RESULTS</h3>
-        <div className={styles.cards}>
-          {cards.map(cardProps => (
-            <Card key={cardProps.id} {...cardProps} />
-          ))}
-        </div>
+          <h3 className={styles.title}>SEARCHING RESULTS</h3>
 
+          {cards.map(cardData => <Card key={cardData.id} {...cardData} />)}
+
+        </Container>
       </section>
-
     );
   }
+
 }
 
 export default SearchResults;

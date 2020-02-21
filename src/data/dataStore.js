@@ -22,7 +22,7 @@ export const pageContents = {
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
 
-export const faqContent= {
+export const faqContent = {
   title: 'Frequently Asked Questions',
   image: 'https://cdn.pixabay.com/photo/2017/07/10/23/43/question-mark-2492009__340.jpg',
   number1: 'Answer 1:',
@@ -99,19 +99,19 @@ const lists = [
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    image: 'https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1346&q=80',
   },
   {
     id: 'list-2',
-    title: 'Things to do <sup>later</sup>',
-    description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    title: 'Place to visit <sup>ASAP!</sup>',
+    description: 'Interesting place I want to see!',
+    image: 'https://images.unsplash.com/photo-1580333943600-5f4c1baad85e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80',
   },
   {
     id: 'list-3',
-    title: 'Things to do <sup>tommorow</sup>',
-    description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    title: 'Books to read <sup>this year</sup>',
+    description: 'Recommended books I want to read!',
+    image: 'https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
   },
 ];
 
@@ -176,7 +176,7 @@ const cards = [
 ];
 
 const initialStoreData = {
-  app: {...pageContents},
+  app: { ...pageContents },
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
