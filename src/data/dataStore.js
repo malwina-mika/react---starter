@@ -99,7 +99,7 @@ const lists = [
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
-    image: 'https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1346&q=80',
+    image: 'https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80',
   },
   {
     id: 'list-2',
@@ -109,9 +109,9 @@ const lists = [
   },
   {
     id: 'list-3',
-    title: 'Books to read <sup>this year</sup>',
-    description: 'Recommended books I want to read!',
-    image: 'https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+    title: 'Work out <sup>this year</sup>',
+    description: 'Activities that I want to do!',
+    image: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80',
   },
 ];
 
@@ -119,26 +119,31 @@ const columns = [
   {
     id: 'column-1',
     listId: 'list-1',
-    title: 'Books',
+    title: 'Read books',
     icon: 'book',
   },
   {
     id: 'column-2',
     listId: 'list-1',
-    title: 'Movies',
+    title: 'Watch movies',
     icon: 'film',
   },
   {
     id: 'column-3',
     listId: 'list-1',
-    title: 'Games',
+    title: 'Play games',
     icon: 'gamepad',
   },
   {
     id: 'column-4',
     listId: 'list-2',
-    title: 'Strange column',
+    title: 'EUROPE',
     icon: 'question',
+  },
+  {
+    id: 'column-5',
+    listId: 'list-3',
+    title: 'Play sports',
   },
 ];
 
@@ -172,6 +177,26 @@ const cards = [
     id: 'card-6',
     columnId: 'column-3',
     title: 'Skyrim',
+  },
+  {
+    id: 'card-7',
+    columnId: 'column-4',
+    title: 'Paris',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-4',
+    title: 'Italy',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-5',
+    title: 'Basketball',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-5',
+    title: 'Volleyball',
   },
 ];
 
